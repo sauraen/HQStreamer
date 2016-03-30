@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="yhZc9r" name="HQStreamer" projectType="audioplug" version="1.0.0"
+              bundleIdentifier="com.sauraen.HQStreamer" includeBinaryInAppConfig="1"
+              buildVST="1" buildVST3="0" buildAU="0" buildRTAS="0" buildAAX="0"
+              pluginName="HQStreamer" pluginDesc="Stream lossless audio to another DAW across the web"
+              pluginManufacturer="Sauraen" pluginManufacturerCode="SREN" pluginCode="HQST"
+              pluginChannelConfigs="{2, 2}" pluginIsSynth="0" pluginWantsMidiIn="0"
+              pluginProducesMidiOut="0" pluginSilenceInIsSilenceOut="0" pluginEditorRequiresKeys="0"
+              pluginAUExportPrefix="HQStreamerAU" pluginRTASCategory="" aaxIdentifier="com.sauraen.HQStreamer"
+              pluginAAXCategory="AAX_ePlugInCategory_Dynamics" jucerVersion="3.2.0"
+              companyName="Sauraen" companyWebsite="sauraen.com" companyEmail="sauraen@gmail.com">
+  <MAINGROUP id="ls7TPP" name="HQStreamer">
+    <GROUP id="{AB047E3C-DAF9-4DB8-A9C4-9329F7D730BD}" name="Source">
+      <FILE id="UP0lqh" name="BufferBar.cpp" compile="1" resource="0" file="Source/BufferBar.cpp"/>
+      <FILE id="pObE6f" name="BufferBar.h" compile="0" resource="0" file="Source/BufferBar.h"/>
+      <FILE id="joIqNh" name="HQSConnection.cpp" compile="1" resource="0"
+            file="Source/HQSConnection.cpp"/>
+      <FILE id="ubkI1g" name="HQSConnection.h" compile="0" resource="0" file="Source/HQSConnection.h"/>
+      <FILE id="LOhd4p" name="HQSServer.cpp" compile="1" resource="0" file="Source/HQSServer.cpp"/>
+      <FILE id="DXQJZW" name="HQSServer.h" compile="0" resource="0" file="Source/HQSServer.h"/>
+      <FILE id="M4D5Qn" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="S4nZHK" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="TeCy1I" name="PingThread.cpp" compile="1" resource="0" file="Source/PingThread.cpp"/>
+      <FILE id="QSicwH" name="PingThread.h" compile="0" resource="0" file="Source/PingThread.h"/>
+      <FILE id="UIRgOn" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="xqleFb" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="hPlygv" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="KRu0m0" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="bcapIu" name="ReceiveBuffer.cpp" compile="1" resource="0"
+            file="Source/ReceiveBuffer.cpp"/>
+      <FILE id="WvON4F" name="ReceiveBuffer.h" compile="0" resource="0" file="Source/ReceiveBuffer.h"/>
+      <FILE id="XxPLbL" name="SenderThread.cpp" compile="1" resource="0"
+            file="Source/SenderThread.cpp"/>
+      <FILE id="bRBQxM" name="SenderThread.h" compile="0" resource="0" file="Source/SenderThread.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2013 targetFolder="Builds/VisualStudio2013" vst3Folder="c:\SDKs\VST3 SDK">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug32" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="HQStreamer_debug" headerPath="C:\Users\Public\Steinberg\VST3_SDK"
+                       libraryPath="C:\Users\Public\Steinberg\VST3_SDK"/>
+        <CONFIGURATION name="Release32" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="2" targetName="HQStreamer32" warningsAreErrors="0"
+                       headerPath="C:\Users\Public\Steinberg\VST3_SDK" libraryPath="C:\Users\Public\Steinberg\VST3_SDK"/>
+        <CONFIGURATION name="Debug64" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="1" optimisation="1" headerPath="C:\Users\Public\Steinberg\VST3_SDK"
+                       libraryPath="C:\Users\Public\Steinberg\VST3_SDK" targetName="HQStreamer64_debug"/>
+        <CONFIGURATION name="Release64" winWarningLevel="4" generateManifest="1" winArchitecture="x64"
+                       isDebug="0" optimisation="2" headerPath="C:\Users\Public\Steinberg\VST3_SDK"
+                       libraryPath="C:\Users\Public\Steinberg\VST3_SDK" targetName="HQStreamer64"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_events" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_graphics" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_data_structures" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="C:/Users/Public/Juce/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="C:/Users/Public/Juce/modules"/>
+      </MODULEPATHS>
+    </VS2013>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+</JUCERPROJECT>
